@@ -8,6 +8,7 @@ import { Login } from "./components/auth/Login";
 import { SignUp } from "./components/auth/SignUp";
 
 import { ChakraProvider } from "@chakra-ui/react";
+import FrontPage from "./components/LandingPage/FrontPage";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <ChakraProvider>
       <Router>
         <Routes>
+          <Route path="/" element={<FrontPage/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signUp" element={<SignUp />} />
         </Routes>
